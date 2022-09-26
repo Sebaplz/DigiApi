@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiApi</title>
+    <!--Css-->
+    <link rel="stylesheet" href="/src/public/css/reducido.css" />
+    <!--Icono de la pestaña-->
+    <link
+      rel="shortcut icon"
+      href="/src/public/assets/images/digivice.png"
+      type="image/x-icon"
+    />
+    <!--DataTables-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
+    />
+    <!--Alertas-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg bg shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="/src/public/assets/images/logo-digimon.png"
+              width="100px"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container w-75 shadow rounded py-3 mb-3">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form action="#">
+                    <div id="liveAlertPlaceholder" class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Nombre"
+                        aria-label="Nombre"
+                        id="nombreDigimon"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                        id="btnBuscar"
+                      >
+                        Buscar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h5
+                        id="nombreD"
+                        class="card-title fw-bold text-center"
+                      ></h5>
+                    </div>
+                    <img
+                      src="https://thumbs.gfycat.com/UnitedGregariousCaecilian-size_restricted.gif"
+                      id="imagenDigimon"
+                      class="card-img-top"
+                      alt="ImgDigimon"
+                    />
+                    <ul class="list-group list-group-flush">
+                      <li
+                        id="nivelDigimon"
+                        class="list-group-item fw-bold"
+                      ></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <table id="data_table" class="table table-hover">
+                <tbody id="dataNombres" class="fw-semibold"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!--DataTable-->
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"
+    ></script>
+    <!--Alertas-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../public/js/index.js"></script>
+  </body>
+</html>
