@@ -1,9 +1,12 @@
 # DigiApi
 Api de Digimon
 
+## Ejemplo en vivo
+Para ver la primera versión de esta aplicación haga click en el siguiente enlace: https://sebaplz.github.io/DigiApi/
+
+
 Se utilizo una api externa para cargar los Digimons https://digimon-api.vercel.app/api/digimon
 
-Para ver la primera versión de esta aplicación haga click en el siguiente enlace: https://sebaplz.github.io/DigiApi/
 
 Web:
 
